@@ -1,4 +1,4 @@
-class SubscriptionsController < ApplicationController
+class Api::V1::SubscriptionsController < ApplicationController
   before_action :find_subscription, only: [:show, :update, :destroy]
 
   def index

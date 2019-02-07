@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  resources :users, :subscriptions
+  namespace :api do
+    namespace :v1 do
+      resources :users, :subscriptions
+    end
+  end
 end
