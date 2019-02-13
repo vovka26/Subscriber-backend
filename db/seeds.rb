@@ -6,37 +6,13 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Subscription.create(name: 'Netflix', category: 'Entartainment', price: 10, due_date: Date.new(2019, 2,3), website: 'https://www.netflix.com', card_number: 4723)
+# Subscription.create(name: 'Netflix', category: 'Entartainment', price: 9.99, website: 'https://www.netflix.com', card_number: '0098', due_date: new Date('2019-02-14'))
+# Subscription.create(name: 'HBOGo', category: 'Entartainment', price: 14.99, website: 'https://www.hbogo.com', card_number: '0098', due_date: new Date('2019-02-14'))
+# Subscription.create(name: 'QUIP', category: 'Hygiene', price: 19, website: 'https://www.quip.com', card_number: '4723', due_date: new Date('2019-02-14'))
+# Subscription.create(name: 'FIOS', category: 'Entartainment', price: 87, website: 'https://www.verizon.net', card_number: '4723', due_date: new Date('2019-02-14'))
+# Subscription.create(name: 'Prime', category: 'Shopping', price: 12.99, website: 'https://www.amazon.com', card_number: '0098', due_date: new Date('2019-02-14'))
 
-User.create(first_name: 'Vladimir', last_name: 'Deryuzhenko', username: 'vovka', password: '')
 
-Transaction.create(user_id: 1, subscription_id: 1, date: Date.new(2019, 2,3), amount: 10)
-
-# create_table "users", force: :cascade do |t|
-#   t.string "first_name"
-#   t.string "last_name"
-#   t.string "username"
-#   t.string "password"
-#   t.datetime "created_at", null: false
-#   t.datetime "updated_at", null: false
-# end
+User.create(first_name: 'Vladimir', last_name: 'Deryuzhenko', username: 'vovka', password_digest: 'hi')
 #
-# create_table "subscriptions", force: :cascade do |t|
-#   t.string "name"
-#   t.string "category"
-#   t.integer "price"
-#   t.date "due_date"
-#   t.string "website"
-#   t.integer "card_number"
-#   t.datetime "created_at", null: false
-#   t.datetime "updated_at", null: false
-# end
-#
-# create_table "transactions", force: :cascade do |t|
-#   t.integer "user_id"
-#   t.integer "subscription_id"
-#   t.date "date"
-#   t.integer "amount"
-#   t.datetime "created_at", null: false
-#   t.datetime "updated_at", null: false
-# end
+# Transaction.create(user_id: 1, subscription_id: 1, date: 03/11/2019, amount: 10)

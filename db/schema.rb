@@ -18,10 +18,10 @@ ActiveRecord::Schema.define(version: 2019_02_06_223132) do
   create_table "subscriptions", force: :cascade do |t|
     t.string "name"
     t.string "category"
-    t.integer "price"
+    t.float "price"
     t.date "due_date"
     t.string "website"
-    t.integer "card_number"
+    t.string "card_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 2019_02_06_223132) do
     t.string "first_name"
     t.string "last_name"
     t.string "username"
-    t.string "password"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
